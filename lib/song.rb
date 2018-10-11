@@ -33,8 +33,9 @@ class Song
     @@genres.each do |genre, songs|
       if genre_array.include? (genre) == false
         genre_array << genre
+        binding.pry
       else
-        songs +1
+
       end
     end
   end
