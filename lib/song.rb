@@ -34,7 +34,7 @@ class Song
       if genre_array.include? (genre) == false
         genre_array << genre
       else
-        songs +=1
+        songs +1
       end
     end
   end
