@@ -31,8 +31,8 @@ class Song
   def self.genre_count
     genre_array = Hash.new(0)
     @@genres.each do |genre|
-      if genre_array.include? (genre) == false
-        genre_array << genre
+      if genre_array[genre]
+        genre_array += 1
       else
         genre_array[genre] =1
       end
