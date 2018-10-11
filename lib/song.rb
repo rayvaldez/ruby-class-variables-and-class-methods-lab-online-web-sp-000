@@ -31,7 +31,11 @@ class Song
   def self.genre_count
     genre_array = []
     @@genres.each do |genre, songs|
-      genre_array << genre
+      if genre_array.include? (genre) == false
+        genre_array << genre
+      else
+        songs +=1
+      end
     end
   end
 end
