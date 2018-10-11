@@ -39,4 +39,16 @@ class Song
     end
     genre_array
   end
+
+  def self.artist_count
+    artist_array = {}
+    @@artist.each do |artist|
+      if artist_array[artist]
+        artist_array[artist] += 1
+      else
+        artist_array[artist] = 1
+      end
+    end
+    artist_array
+  end
 end
